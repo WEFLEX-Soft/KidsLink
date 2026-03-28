@@ -1,0 +1,31 @@
+ai:
+    server:
+        url: http://flask_backend:5000
+file:
+    profile-dir: /app/src/main/resources/static/profiles
+frontend:
+    server:
+        url: https://www.kidslink.xyz
+openvidu:
+    secret: MY_SECRET
+    url: https://www.kidslink.xyz:4430
+server:
+    port: 8080
+    ssl:
+        enabled: true
+        key-store: /app/keystore.p12
+        key-store-password: ${SSL_KEY_STORE_PASSWORD}
+        keyAlias: tomcat
+        keyStoreType: PKCS12
+    url: https://www.kidslink.xyz:8080/api
+spring:
+    security:
+        oauth2:
+            client:
+                registration:
+                    google:
+                        redirect-uri: ${OAUTH2_GOOGLE_REDIRECT_URI}
+                    kakao:
+                        redirect-uri: ${OAUTH2_KAKAO_REDIRECT_URI}
+                    naver:
+                        redirect-uri: ${OAUTH2_NAVER_REDIRECT_URI}

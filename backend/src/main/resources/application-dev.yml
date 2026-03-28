@@ -1,0 +1,18 @@
+ai:
+    server:
+        url: http://localhost:5000
+file:
+    profile-dir: src/main/resources/static/profiles
+server:
+    url: http://localhost:8080/api
+spring:
+    security:
+        oauth2:
+            client:
+                registration:
+                    google:
+                        redirect-uri: ${OAUTH2_GOOGLE_REDIRECT_URI:http://localhost:8080/login/oauth2/code/google}
+                    kakao:
+                        redirect-uri: ${OAUTH2_KAKAO_REDIRECT_URI:http://localhost:8080/login/oauth2/code/kakao}
+                    naver:
+                        redirect-uri: ${OAUTH2_NAVER_REDIRECT_URI:http://localhost:8080/login/oauth2/code/naver}
