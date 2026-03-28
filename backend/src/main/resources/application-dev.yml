@@ -3,6 +3,9 @@ ai:
         url: http://localhost:5000
 file:
     profile-dir: src/main/resources/static/profiles
+frontend:
+    server:
+        url: http://localhost:5173
 server:
     url: http://localhost:8080/api
 spring:

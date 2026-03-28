@@ -45,11 +45,11 @@ spring:
     datasource:
         driver-class-name: org.mariadb.jdbc.Driver
         password: ${SPRING_DATASOURCE_PASSWORD:root}
-        url: ${SPRING_DATASOURCE_URL:jdbc:mariadb://localhost:3306?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true}
+        url: ${SPRING_DATASOURCE_URL:jdbc:mariadb://localhost:3306/kidslink?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true}
         username: ${SPRING_DATASOURCE_USERNAME:1234}
     jpa:
         hibernate:
-            ddl-auto: none
+            ddl-auto: update
             naming:
                 physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
         properties:
