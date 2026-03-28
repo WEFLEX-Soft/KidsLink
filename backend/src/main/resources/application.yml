@@ -99,3 +99,19 @@ spring:
             max-request-size: ${SPRING_SERVLET_MULTIPART_MAX_REQUEST_SIZE:200MB}
 use:
     s3: ${USE_S3:false}
+
+
+springdoc: #swagger
+    packages-to-scan: com.ssafy.kidslink
+    default-consumes-media-type: application/json;charset=UTF-8
+    default-produces-media-type: application/json;charset=UTF-8
+    swagger-ui:
+        path: /swagger.html            # Swagger UI 경로 => http://localhost:9090/api/swagger-ui/index.html
+        tags-sorter: alpha            # alpha: 알파벳 순 태그 정렬, method: HTTP Method 순 정렬
+        operations-sorter: alpha      # alpha: 알파벳 순 태그 정렬, method: HTTP Method 순 정렬
+    api-docs:
+        path: /api-docs/json
+        groups:
+            enabled: true
+    cache:
+        disabled: true
