@@ -44,9 +44,9 @@ spring:
             port: ${SPRING_DATA_REDIS_PORT:6379}
     datasource:
         driver-class-name: org.mariadb.jdbc.Driver
-        password: ${SPRING_DATASOURCE_PASSWORD:root}
         url: ${SPRING_DATASOURCE_URL:jdbc:mariadb://localhost:3306/kidslink?useSSL=false&useUnicode=true&serverTimezone=Asia/Seoul&allowPublicKeyRetrieval=true}
-        username: ${SPRING_DATASOURCE_USERNAME:1234}
+        username: ${SPRING_DATASOURCE_USERNAME:root}
+        password: ${SPRING_DATASOURCE_PASSWORD:1234}
     jpa:
         hibernate:
             ddl-auto: update

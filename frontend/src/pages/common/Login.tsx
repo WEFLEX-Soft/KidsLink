@@ -157,6 +157,14 @@ const DesktopComponent = () => {
 
             <div className="mt-1 flex flex-row">
               <button
+                  type="button"
+                  className="mr-[6px] border-[1px] border-[#A1A1A1] w-[213px] h-[38px] rounded-[7px] text-[15px] font-bold mb-3 bg-[#fff] flex flex-row items-center justify-center transform hover:scale-105 transition-transform duration-200"
+                  onClick={() => handleSocialLogin("naver")}
+              >
+                <FcGoogle className="mr-3 text-[20px]" />
+                네이버 로그인
+              </button>
+              <button
                 type="button"
                 className="mr-[6px] border-[1px] border-[#A1A1A1] w-[213px] h-[38px] rounded-[7px] text-[15px] font-bold mb-3 bg-[#fff] flex flex-row items-center justify-center transform hover:scale-105 transition-transform duration-200"
                 onClick={() => handleSocialLogin("google")}
