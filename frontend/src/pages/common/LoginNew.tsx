@@ -63,7 +63,7 @@ export default function LoginCenterPage() {
                     {/* Title */}
                     <div className="mb-10">
                         <h1 className="text-[46px] font-bold text-[#222] leading-tight">
-                            Back to your digital life
+                            Back to your digital life origin/feature/login
                         </h1>
 
                         <p className="text-[20px] text-[#777] mt-3">
