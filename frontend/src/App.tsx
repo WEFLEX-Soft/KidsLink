@@ -7,6 +7,7 @@ import {
   TeacherMeetingGuard,
 } from "./components/meeting/MeetingGuard";
 import LoginCenterPage from "./pages/common/LoginCenterPage";
+import LoginNew from "./pages/common/LoginNew";
 import ErrorPage from "./pages/common/ErrorPage";
 
 const Join = lazy(() => import("./pages/common/Join"));
@@ -194,6 +195,7 @@ export default function App() {
           <>
             {/* Default User Routes */}
             <Route path="/" element={<Login />} />
+            <Route path="/login_new" element={<LoginNew />} />
             <Route path="/login" element={<LoginCenterPage />} />
             <Route path="/join" element={<Join />} />
             <Route path="/social/join" element={<SocialJoinRedirect />} />
