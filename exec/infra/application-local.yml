@@ -1,0 +1,49 @@
+version: '3.8'
+
+services:
+
+  frontend:
+    image: weflex/frontend
+    env_file:
+      - /home/minsun/.env.production
+    volumes:
+      - /home/minsun/certs:/etc/letsencrypt
+    depends_on:
+      - backend
+
+  backend:
+    image: weflex/backend
+    env_file:
+      - .env
+    volumes:
+      - ./keystore.p12:/app/keystore.p12
+      - /opt/openvidu/recordings:/opt/openvidu/recordings
+    depends_on:
+      - redis
+    ports:
+      - "8080:8080"
+
+  redis:
+    image: redis:alpine
+    ports:
+      - "6378:6379"
+
+  flask_backend:
+    image: weflex/flask-backend
+    ports:
+      - "5000:5000"
+    depends_on:
+      - redis
+
+  nginx:
+    image: weflex/frontend
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - /home/minsun/certs:/etc/letsencrypt
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - frontend
+      - backend
+      - flask_backend
