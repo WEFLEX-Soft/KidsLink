@@ -1,3 +1,4 @@
+//login11111
 import React, { useState, useEffect } from "react";
 import LoginHeader from "../../components/login/LoginHeader";
 import mainImg from "../../assets/teacher/main_img.png";
@@ -109,7 +110,7 @@ const DesktopComponent = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "소중한 추억을 기록하며<br>교육의 모든 순간을 함께하세요. login1111",
+                    "소중한 추억을 기록하며<br>교육의 모든 순간을 함께하세요.",
                   ],
                   autoStart: true,
                   loop: true,
