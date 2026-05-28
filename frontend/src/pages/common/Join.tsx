@@ -1,4 +1,4 @@
-// 공통파일 1111111111111
+// 공통파일 2222222222222222222
 import { useState, useEffect } from "react"
 import { useNavigate, useLocation } from "react-router-dom"
 import useAppStore from "../../stores/store"
