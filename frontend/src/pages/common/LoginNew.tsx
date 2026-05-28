@@ -1,3 +1,4 @@
+//login11111
 import { RiKakaoTalkFill } from "react-icons/ri";
 import LoginHeader from "../../components/login/LoginHeader";
 import { FcGoogle } from "react-icons/fc";
@@ -63,7 +64,7 @@ export default function LoginCenterPage() {
                     {/* Title */}
                     <div className="mb-10">
                         <h1 className="text-[46px] font-bold text-[#222] leading-tight">
-                            Back to your digital life xxxxxxxxxxxxx
+                            Back to your digital life
                         </h1>
 
                         <p className="text-[20px] text-[#777] mt-3">
