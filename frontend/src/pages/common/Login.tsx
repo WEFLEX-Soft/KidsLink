@@ -109,7 +109,7 @@ const DesktopComponent = () => {
               <Typewriter
                 options={{
                   strings: [
-                    "소중한 추억을 기록하며<br>교육의 모든 순간을 함께하세요.",
+                    "소중한 추억을 기록하며<br>교육의 모든 순간을 함께하세요. login",
                   ],
                   autoStart: true,
                   loop: true,
