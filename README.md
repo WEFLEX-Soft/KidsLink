@@ -1,4 +1,4 @@
-# 🌱 키즈링크
+# 🌱 키즈링크 feature/login
 ![썸네일](./docs/assets/images/thumbnail.PNG)
 
 ## 💛 프로젝트 소개
