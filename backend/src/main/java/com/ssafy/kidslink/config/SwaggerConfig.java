@@ -14,7 +14,7 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI customOpenAPI() {
 
-        Info info = new Info().version("v2.2.0").title("KidsLink API").description("API 명세서");
+        Info info = new Info().version("v2.2.0").title("KidsLink API").description("API 명세서 aaaaaaaa");
 
         return new OpenAPI()
                 .info(info)
